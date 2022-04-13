@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.flyin</groupId>
+    <artifactId>datagovernance</artifactId>
+    <packaging>pom</packaging>
+    <version>{datagovernance.version}</version>
+    <modules>
+        <module>datagovernance-parent</module>
+        <module>datasource</module>
+    </modules>
+
+    <parent>
+        <!--下面模块统计继承此处SpringBoot环境-->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.3.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <!--开发版本-->
+        <datagovernance.version>1.0-SNAPSHOT</datagovernance.version>
+        <!--maven编译版本-->
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+</project>
